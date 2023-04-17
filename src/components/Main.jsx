@@ -1,9 +1,10 @@
 import Container from 'react-bootstrap/Container';
-function Main() {
+function Main({children}) {
     return (
         <main>
+            <br/>
             <Container>
-                <h1>Main</h1>
+                {children}
             </Container>
         </main>
     );

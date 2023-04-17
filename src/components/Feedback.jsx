@@ -1,9 +1,9 @@
 
 function Feedback() {
     return (
-        <nav>
+        <div>
             <h1>Feedback</h1>
-        </nav>
+        </div>
     );
 }
 
