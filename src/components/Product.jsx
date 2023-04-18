@@ -1,13 +1,13 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function Product({img, title,description,price}) {
+function Product({img, title,description,price,fit=true}) {
 
     const imgDiv = {
         height: "195px"
     }
     const imgStyle = {
-        objectFit: "contain",
+        objectFit: fit? "contain": "cover",
         height: "100%",
         width: "100%"
     }
@@ -33,8 +33,8 @@ function Product({img, title,description,price}) {
                     )}</del>
                 </p>
                 <div  className="d-flex justify-content-between">
-                    <Button variant="primary"><i className="bi bi-cart-plus"></i> Add Card</Button>
-                    <Button variant="success"><i className="bi bi-bag"></i> Buy Now</Button>
+                    <Button variant="primary" size="sm"><i className="bi bi-cart-plus"></i> Add Card</Button>
+                    <Button variant="success" size="sm"><i className="bi bi-bag"></i> Buy Now</Button>
                 </div>
             </Card.Footer>
         </Card>
