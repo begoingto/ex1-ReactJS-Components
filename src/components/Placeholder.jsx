@@ -25,8 +25,8 @@ function PlaceHolder() {
                     <Placeholder xs={2} /> | <Placeholder xs={2} />
                 </p>
                 <div className="d-flex justify-content-between">
-                    <Placeholder.Button variant="primary" xs={4} />
-                    <Placeholder.Button variant="success" xs={4} />
+                    <Placeholder.Button size="sm" variant="primary" xs={4} />
+                    <Placeholder.Button size="sm" variant="success" xs={4} />
                 </div>
             </Card.Footer>
         </Card>
